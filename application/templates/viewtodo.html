@@ -13,6 +13,7 @@
     <p class="card-text text-muted">{{ todo.date_created }}</p>
     <p class="card-text">{{ todo.description }}</p>
     <a href="{{ url_for('updatetodo', id = todo._id) }}" class="btn btn-outline-info btn-sm">Update</a>
+    <a href="{{ url_for('deletetodo', id = todo._id) }}" class="btn btn-outline-danger btn-sm">delete</a>
 </div>
     </div>
     {% endfor %}
